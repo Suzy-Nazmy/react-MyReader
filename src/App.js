@@ -5,6 +5,8 @@ import ListBook from "./ListBook"
 import {Route, Link} from 'react-router-dom'
 import * as BooksAPI from './BooksAPI'
 import Book from "./Book";
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
 
 class BooksApp extends Component {
   state = {
@@ -70,7 +72,7 @@ class BooksApp extends Component {
   }
 
   render() {
-    const {query} = this.state
+    let {query} = this.state
     return (
       <div className="app">
 
